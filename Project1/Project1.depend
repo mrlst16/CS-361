@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\mattl\source\repos\cs361\project1\main.cpp
+	<iostream>
+
+1598927090 source:c:\users\mattl\source\repos\cs361\project1\src\author.cpp
+	"Author.h"
+
+1598928563 c:\users\mattl\source\repos\cs361\project1\include\author.h
+	<string>
+	"Address.h"
+	"Book.h"
+
+1598927030 source:c:\users\mattl\source\repos\cs361\project1\src\address.cpp
+	"Address.h"
+
+1598928052 c:\users\mattl\source\repos\cs361\project1\include\address.h
+	<string>
+
+1598927979 source:c:\users\mattl\source\repos\cs361\project1\src\publisher.cpp
+	"Publisher.h"
+
+1598928222 c:\users\mattl\source\repos\cs361\project1\include\publisher.h
+	<string>
+
+1598927827 source:c:\users\mattl\source\repos\cs361\project1\src\book.cpp
+	"Book.h"
+
+1598928821 c:\users\mattl\source\repos\cs361\project1\include\book.h
+	<string>
+	"Author.h"
+	"Publisher.h"
+

@@ -1,0 +1,87 @@
+Advanced Flight: Radio, Machine Tools, 44370
+Alphabet: 28
+Amphibious Warfare: Navigation, Tactics, 12889
+Astronomy: Mysticism, Mathematics, 400
+Atomic Theory: Theory of Gravity, Physics, 3633
+Automobile: Combustion, Steel, 28118
+Banking: Trade, The Republic, 928
+Bridge Building: Iron Working, Construction, 552
+Bronze Working: 28
+Ceremonial Burial: 28
+Chemistry: University, Medicine, 2298
+Chivalry: Feudalism, Horseback Riding, 729
+Code of Laws: Alphabet, 79
+Combined Arms: Mobile Warfare, Advanced Flight, 56104
+Combustion: Refining, Explosives, 19155
+Communism: Philosophy, Industrialization, 10004
+Computers: Mass Production, Miniaturization, 50380
+Conscription: Democracy, Metallurgy, 6470
+Construction: Masonry, Currency, 218
+Currency: Bronze Working, 79
+Democracy: Banking, Invention, 2540
+Economics: Banking, University, 2405
+Electricity: Metallurgy, Magnetism, 7550
+Electronics: The Corporation, Electricity, 17914
+Engineering: The Wheel, Construction, 523
+Environmentalism: Recycling, Space Flight, 79634
+Espionage: Communism, Democracy, 12774
+Explosives: Gunpowder, Chemistry, 5180
+Feudalism: Warrior Code, Monarchy, 431
+Flight: Combustion, Theory of Gravity, 22442
+Fusion Power: Nuclear Power, Superconductors, 54353
+Genetic Engineering: Medicine, The Corporation, 13908
+Guerilla Warfare: Communism, Tactics, 20397
+Gunpowder: Invention, Iron Working, 1980
+Horseback Riding: 28
+Industrialization: Railroad, Banking, 7883
+Invention: Engineering, Literacy, 1232
+Iron Working: Bronze Working, Warrior Code, 136
+Labor Union: Mass Production, Guerilla Warfare, 45896
+Laser: Mass Production, Nuclear Power, 46307
+Leadership: Chivalry, Gunpowder, 3536
+Literacy: Writing, Code of Laws, 241
+Machine Tools: Steel, Tactics, 23516
+Magnetism: Iron Working, Physics, 2711
+Map Making: Alphabet, 79
+Masonry: 28
+Mass Production: Automobile, The Corporation, 31340
+Mathematics: Alphabet, Masonry, 136
+Medicine: Philosophy, Trade, 1186
+Metallurgy: Gunpowder, University, 3760
+Miniaturization: Machine Tools, Electronics, 32350
+Mobile Warfare: Automobile, Tactics, 37526
+Monarchy: Ceremonial Burial, Code of Laws, 218
+Monotheism: Philosophy, Polytheism, 1018
+Mysticism: Ceremonial Burial, 79
+Navigation: Seafaring, Astronomy, 954
+Nuclear Fission: Mass Production, Atomic Theory, 36171
+Nuclear Power: Nuclear Fission, Electronics, 42449
+Philosophy: Mysticism, Literacy, 546
+Physics: Literacy, Navigation, 1747
+Plastics: Refining, Space Flight, 76083
+Polytheism: Horseback Riding, Ceremonial Burial, 136
+Pottery: 28
+Radio: Flight, Electricity, 29166
+Railroad: Steam Engine, Bridge Building, 5549
+Recycling: Mass Production, Democracy, 35470
+Refining: Chemistry, The Corporation, 14640
+Refrigeration: Sanitation, Electricity, 10856
+Robotics: Mobile Warfare, Computers, 58995
+Rocketry: Advanced Flight, Electronics, 51430
+Sanitation: Engineering, Medicine, 2393
+Seafaring: Pottery, Map Making, 218
+Space Flight: Computers, Rocketry, 70843
+Stealth: Superconductors, Advanced Flight, 74539
+Steam Engine: Physics, Invention, 3813
+Steel: Electricity, Industrialization, 14957
+Superconductors: Nuclear Power, Laser, 50275
+Tactics: Conscription, Leadership, 9808
+The Corporation: Economics, Industrialization, 11243
+The Republic: Code of Laws, Literacy, 387
+The Wheel: Horseback Riding, 79
+Theology: Feudalism, Monotheism, 1922
+Theory of Gravity: Astronomy, University, 1671
+Trade: Currency, Code of Laws, 304
+University: Mathematics, Philosophy, 1018
+Warrior Code: 28
+Writing: Alphabet, 79
