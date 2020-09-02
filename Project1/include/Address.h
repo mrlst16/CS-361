@@ -9,7 +9,8 @@ class Address
 {
     public:
 
-        Author(
+        Address();
+        Address(
            string street,
            string city,
            string state,
@@ -27,6 +28,8 @@ class Address
 
         string getZip() const;
         void setZip (std::string theZip);
+
+        bool operator==(const Address& addr) const;
     protected:
 
     private:
@@ -36,4 +39,9 @@ class Address
         string _zip;
 };
 
+//The output stream operator is decalred OUTSIDE the class
+//The reason being is that the stream is on the LEFT side.
+//Normally, a function is called by the oobject on the right
+//E.G addr.SetZip("15106") vs cout << addr
+std::ostream& operator<<(std::ostream& stream, const Address& addr);
 #endif // ADDRESS_H

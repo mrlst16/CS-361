@@ -30,3 +30,37 @@
 	"Author.h"
 	"Publisher.h"
 
+1599018080 source:c:\users\mattl\source\repos\cs-361\project1\main.cpp
+	<iostream>
+	"Author.h"
+	"Address.h"
+	"Publisher.h"
+	<string>
+
+1598936325 source:c:\users\mattl\source\repos\cs-361\project1\src\address.cpp
+	"Address.h"
+	<string>
+
+1599019782 c:\users\mattl\source\repos\cs-361\project1\include\address.h
+	<string>
+
+1598996303 source:c:\users\mattl\source\repos\cs-361\project1\src\author.cpp
+	"Author.h"
+
+1599017905 c:\users\mattl\source\repos\cs-361\project1\include\author.h
+	<string>
+	"Address.h"
+	"Book.h"
+
+1599019500 c:\users\mattl\source\repos\cs-361\project1\include\book.h
+	<string>
+
+1599017930 c:\users\mattl\source\repos\cs-361\project1\include\publisher.h
+	<string>
+
+1599018422 source:c:\users\mattl\source\repos\cs-361\project1\src\book.cpp
+	"Book.h"
+
+1599015630 source:c:\users\mattl\source\repos\cs-361\project1\src\publisher.cpp
+	"Publisher.h"
+

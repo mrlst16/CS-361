@@ -2,21 +2,34 @@
 #define BOOK_H
 
 #include <string>
-#include "Author.h"
-#include "Publisher.h"
+
+class Author;
+class Publisher;
 
 using namespace std;
 class Book {
 
 public:
+    Book();
 
-//    Book(
-//     string& title,
-//     const string& isbn,
-//     const Publisher& publisher,
-//     Author* authors = nullptr,
-//     int numAuthors = 0
-//     );
+    //Copy Constructor
+    //If not defined, this is also created for us
+    Book(const Book& book);
+
+    Book(
+        const string& title,
+        const string& isbn,
+        const Publisher& publisher,
+        Author* authors = nullptr,
+        int numauthors = 0
+     );
+
+     Book(
+        const std::string& title,
+        const std::string& isbn,
+        const Publisher& publisher,
+        const Author& author1
+        );
 
     string getTitle() const;
     void setTitle(const string& newTitle);
@@ -30,8 +43,7 @@ public:
 protected:
 private:
     string _title;
-    Publisher _publisher;
+    const Publisher& _publisher;
     string _isbn;
 };
-
 #endif // BOOK_H

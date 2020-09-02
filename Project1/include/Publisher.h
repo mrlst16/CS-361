@@ -8,6 +8,10 @@ using namespace std;
 class Publisher
 {
     public:
+        Publisher();
+
+        Publisher(string name);
+
         string getName() const;
         void setName(string name);
     protected:

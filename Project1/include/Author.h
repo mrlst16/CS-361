@@ -10,6 +10,10 @@ using namespace std;
 class Author
 {
     public:
+        Author();
+
+        Author(std::string name, const Address& address);
+
         string getName() const;
         void setName(string name);
 
@@ -24,6 +28,8 @@ class Author
     protected:
 
     private:
+        string _name;
+        const Address& _address;
 };
 
 #endif // AUTHOR_H
