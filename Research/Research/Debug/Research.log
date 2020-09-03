@@ -1,13 +1,3 @@
-﻿  encyclopedia.cpp
-  memoryChecked.cpp
-  permittedResearch.cpp
-  researchplan.cpp
-  testEncyclopedia.cpp
-  testResearchPlan.cpp
-  topic.cpp
-  unittest.cpp
-C:\Users\mattl\source\repos\Research\Research\unittest.cpp(684,51): warning C4390: ';': empty controlled statement found; is this the intent?
-  Generating Code...
-C:\Users\mattl\source\repos\Research\Research\unittest.h(800): warning C4717: 'CppUnitLite::operator<<ResearchPlan>': recursive on all control paths, function will cause runtime stack overflow
-unittest.obj : error LNK2005: _main already defined in permittedResearch.obj
-C:\Users\mattl\source\repos\Research\Debug\Research.exe : fatal error LNK1169: one or more multiply defined symbols found
+﻿  unittest.cpp
+C:\Users\mattl\source\repos\CS-361\Research\Research\unittest.cpp(684,51): warning C4390: ';': empty controlled statement found; is this the intent?
+  Research.vcxproj -> C:\Users\mattl\source\repos\CS-361\Research\Debug\Research.exe

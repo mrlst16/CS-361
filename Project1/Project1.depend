@@ -41,26 +41,34 @@
 	"Address.h"
 	<string>
 
-1599019782 c:\users\mattl\source\repos\cs-361\project1\include\address.h
+1599019863 c:\users\mattl\source\repos\cs-361\project1\include\address.h
 	<string>
 
-1598996303 source:c:\users\mattl\source\repos\cs-361\project1\src\author.cpp
+1599096140 source:c:\users\mattl\source\repos\cs-361\project1\src\author.cpp
 	"Author.h"
+	<ostream>
 
-1599017905 c:\users\mattl\source\repos\cs-361\project1\include\author.h
+1599103493 c:\users\mattl\source\repos\cs-361\project1\include\author.h
 	<string>
 	"Address.h"
 	"Book.h"
+	<ostream>
 
-1599019500 c:\users\mattl\source\repos\cs-361\project1\include\book.h
+1599097067 c:\users\mattl\source\repos\cs-361\project1\include\book.h
 	<string>
 
-1599017930 c:\users\mattl\source\repos\cs-361\project1\include\publisher.h
+1599096531 c:\users\mattl\source\repos\cs-361\project1\include\publisher.h
 	<string>
+	<ostream>
 
-1599018422 source:c:\users\mattl\source\repos\cs-361\project1\src\book.cpp
+1599097079 source:c:\users\mattl\source\repos\cs-361\project1\src\book.cpp
 	"Book.h"
-
-1599015630 source:c:\users\mattl\source\repos\cs-361\project1\src\publisher.cpp
+	"Author.h"
 	"Publisher.h"
+	<ostream>
+
+1599096419 source:c:\users\mattl\source\repos\cs-361\project1\src\publisher.cpp
+	"Publisher.h"
+	<ostream>
+	<string>
 

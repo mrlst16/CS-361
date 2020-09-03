@@ -31,19 +31,31 @@ public:
         const Author& author1
         );
 
-    string getTitle() const;
+    string getTitle() const{return _title;};
     void setTitle(const string& newTitle);
 
     const Publisher& getPublisher() const;
     void setPublisher (const Publisher& publ);
 
-    string getISBN() const;
+    string getISBN() const{return _isbn;};
     void setISBN(const string& newISBN);
 
+    void addAuthor(const Author& author);
+    void removeAuthor(const Author& author);
+    Author getAuthor(int i) const;
+
+    bool operator==(const Book& other) const;
+    bool operator<(const Book& other) const;
+
+    int numberOfAuthors() const {return _numAuthors;}
 protected:
 private:
     string _title;
     const Publisher& _publisher;
     string _isbn;
+    Author* _authors;  // array of authors
+    int _numAuthors;
 };
+
+ostream& operator<<(ostream& out, const Book& book);
 #endif // BOOK_H
