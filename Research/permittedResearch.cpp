@@ -14,7 +14,6 @@ using namespace std;
 
 void readPlayerInfo (istream& input, vector<string>& knownTopics)
 {
-    cout << "Reading player info" << endl;
 	string line;
 	getline (input, line);
 	while (input && (line != "---"))
@@ -22,8 +21,6 @@ void readPlayerInfo (istream& input, vector<string>& knownTopics)
 		knownTopics.push_back(line);
 		getline (input, line);
 	}
-	cout << "After While Loop" << endl;
-	cout << line << endl;
 }
 
 
@@ -94,18 +91,12 @@ void permittedResearch(const Encyclopedia& encyc,
 
 int main (int argc, char** argv)
 {
-    cout << "permintterResarch.cpp main" << endl;
-    cout << "argc " << argc << endl;
-    cout << "argv[0] " << argv[0] << endl;
-    cout << "argv[1] " << argv[1] << endl;
 	{
 		Encyclopedia encyclopedia;
 		vector<string> alreadyresearched;
 		if (argc > 1)
 		{
-		    cout << "In reading streams" << endl;
 			ifstream in (argv[1]);
-			cout << "We have made the stream" << endl;
 			encyclopedia.read (in);
 			readPlayerInfo(in, alreadyresearched);
 		}
