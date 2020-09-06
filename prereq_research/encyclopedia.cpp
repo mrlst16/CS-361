@@ -140,8 +140,6 @@ ResearchPlan& Encyclopedia::findOrAdd (const std::string& topicName)
 	return plans.back();
 }
 
-
-
 bool Encyclopedia::operator== (const Encyclopedia& right) const
 {
 	auto rightItr = right.plans.begin();

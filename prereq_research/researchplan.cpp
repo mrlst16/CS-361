@@ -89,18 +89,6 @@ const ResearchPlan& ResearchPlan::operator=(const ResearchPlan& other){
     return *this;
 }
 
-ostream& operator<< (ostream& out, const ResearchPlan& c)
-{
-	out << c.researchTopic << " (";
-	for (int i = 0; i < c.numberOfRequirements; ++i)
-	{
-		if (i > 0)
-			out << ',';
-		out << c.requirements[i];
-	}
-	out << ')';
-	return out;
-}
 
 bool operator==(const ResearchPlan one, const ResearchPlan two)
 {
