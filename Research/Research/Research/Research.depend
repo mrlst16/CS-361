@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1599117412 source:c:\users\mattl\source\repos\cs-361\research\memorychecked.cpp
+	"memoryChecked.h"
+	<iostream>
+
+1599117419 c:\users\mattl\source\repos\cs-361\research\memorychecked.h
+	<exception>
+
+1599117430 source:c:\users\mattl\source\repos\cs-361\research\permittedresearch.cpp
+	<algorithm>
+	<iostream>
+	<fstream>
+	<limits>
+	<iomanip>
+	<string>
+	<vector>
+	"encyclopedia.h"
+	"memoryChecked.h"
+	"researchplan.h"
+
+1599117380 c:\users\mattl\source\repos\cs-361\research\encyclopedia.h
+	<iostream>
+	<vector>
+	"researchplan.h"
+
+1599263883 c:\users\mattl\source\repos\cs-361\research\researchplan.h
+	<iostream>
+	<string>
+	"topic.h"
+
+1599117495 c:\users\mattl\source\repos\cs-361\research\topic.h
+	<iostream>
+	<string>
+	"memoryChecked.h"
+
+1599263983 source:c:\users\mattl\source\repos\cs-361\research\researchplan.cpp
+	"researchplan.h"
+	<cassert>
+	<iostream>
+	<string>
+	<utility>
+
+1599117477 source:c:\users\mattl\source\repos\cs-361\research\testencyclopedia.cpp
+	"unittest.h"
+	<sstream>
+	<algorithm>
+	<iterator>
+	<set>
+	"encyclopedia.h"
+
+1599117509 c:\users\mattl\source\repos\cs-361\research\unittest.h
+	<algorithm>
+	<cstdarg>
+	<iostream>
+	<map>
+	<sstream>
+	<string>
+	<vector>
+
+1599117490 source:c:\users\mattl\source\repos\cs-361\research\topic.cpp
+	"topic.h"
+	<iostream>
+	<string>
+
+1599117503 source:c:\users\mattl\source\repos\cs-361\research\unittest.cpp
+	<algorithm>
+	<iostream>
+	<iomanip>
+	<set>
+	<sstream>
+	<fstream>
+	<chrono>
+	<thread>
+	<mutex>
+	<regex>
+	<iterator>
+	<signal.h>
+	<setjmp.h>
+	<cstdlib>
+	<unistd.h>
+	"unittest.h"
+	<debugapi.h>
+	<winbase.h>
+	<w32api/debugapi.h>
+
