@@ -146,7 +146,7 @@ bool UnitTest::debuggerIsRunning()
 	static bool debuggerDetected = false;
 	const string traceField = "tracerpid";
 
-	int pid = ::_getpid();
+	int pid = ::getpid();
 	string statusFile = string("/proc/") + std::to_string(pid) + "/status";
 	ifstream status(statusFile);
 	if (status) {
