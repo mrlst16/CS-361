@@ -14,6 +14,7 @@ using namespace std;
 
 void readPlayerInfo (istream& input, vector<string>& knownTopics)
 {
+    cout << "Reading player info" << endl;
 	string line;
 	getline (input, line);
 	while (input && (line != "---"))
@@ -21,6 +22,8 @@ void readPlayerInfo (istream& input, vector<string>& knownTopics)
 		knownTopics.push_back(line);
 		getline (input, line);
 	}
+	cout << "After While Loop" << endl;
+	cout << line << endl;
 }
 
 
@@ -100,7 +103,9 @@ int main (int argc, char** argv)
 		vector<string> alreadyresearched;
 		if (argc > 1)
 		{
+		    cout << "In reading streams" << endl;
 			ifstream in (argv[1]);
+			cout << "We have made the stream" << endl;
 			encyclopedia.read (in);
 			readPlayerInfo(in, alreadyresearched);
 		}

@@ -815,16 +815,16 @@ CppUnitLite::NotNullMatcher isNotNull()
 
 
 #ifndef NOMAIN
-//
-//int main(int argc, char** argv)
-//{
-//	UnitTest::diagnosticMessagesBeforeResults = true;
-//	UnitTest::runTests(argc - 1, argv + 1, argv[0]);
-//
-//	UnitTest::report();
-//
-//	return 0;
-//}
+
+int main(int argc, char** argv)
+{
+	UnitTest::diagnosticMessagesBeforeResults = true;
+	UnitTest::runTests(argc - 1, argv + 1, argv[0]);
+
+	UnitTest::report();
+    std::cout << "Ok, Unit tests are done here" << std::endl;
+	return 0;
+}
 
 #endif
 

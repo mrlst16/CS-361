@@ -6,7 +6,7 @@
 1599117419 c:\users\mattl\source\repos\cs-361\research\memorychecked.h
 	<exception>
 
-1599337408 source:c:\users\mattl\source\repos\cs-361\research\permittedresearch.cpp
+1599427069 source:c:\users\mattl\source\repos\cs-361\research\permittedresearch.cpp
 	<algorithm>
 	<iostream>
 	<fstream>
@@ -62,7 +62,7 @@
 	<iostream>
 	<string>
 
-1599357718 source:c:\users\mattl\source\repos\cs-361\research\unittest.cpp
+1599427295 source:c:\users\mattl\source\repos\cs-361\research\unittest.cpp
 	<algorithm>
 	<iostream>
 	<iomanip>
