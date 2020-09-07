@@ -76,15 +76,15 @@ Topic ResearchPlan::getRequirement(int i) const
 
 const ResearchPlan& ResearchPlan::operator=(const ResearchPlan& other){
 
-    this->maxRequirements = other.maxRequirements;
-    this->numberOfRequirements = other.numberOfRequirements;
+    maxRequirements = other.maxRequirements;
+    numberOfRequirements = other.numberOfRequirements;
 
-    delete [] this->requirements;
-    this->requirements = new Topic[other.numberOfRequirements];
-    for(int i= 0; i < other.numberOfRequirements; i++)
-        this->requirements[i] = other.requirements[i];
+    delete [] requirements;
+    requirements = new Topic[maxRequirements];
+    for(int i= 0; i < numberOfRequirements; i++)
+        requirements[i] = other.requirements[i];
 
-    this->researchTopic = other.researchTopic;
+    researchTopic = other.researchTopic;
 
     return *this;
 }
