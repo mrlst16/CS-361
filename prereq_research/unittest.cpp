@@ -348,8 +348,7 @@ void UnitTest::runTestUntimed (unsigned testNumber, std::string testName, TestFu
 // Run a single unit test function.
 void UnitTest::runTest (unsigned testNumber, std::string testName, TestFunction u, long timeLimit)
 {
-    cout << "TestNumber: " << testNumber << ", TestName: " << testName << endl;
-	if (timeLimit > 0L && !debuggerIsRunning())
+    if (timeLimit > 0L && !debuggerIsRunning())
 	{
 		int testResult = -99; // 1== passed, 0 == failed, -1 == error
 		std::string testExplanation;
