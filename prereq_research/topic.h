@@ -18,7 +18,6 @@ struct Topic {
 	Topic();
 
 	Topic (std::string theName, int theCost);
-
 	bool operator== (const Topic& right) const;
 	bool operator< (const Topic& right) const;
 private:

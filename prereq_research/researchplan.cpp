@@ -9,7 +9,7 @@ using namespace std;
 
 
 ResearchPlan::ResearchPlan()
-: researchTopic(), numberOfRequirements(0), maxRequirements(0), requirements(nullptr)
+: researchTopic(), numberOfRequirements(0), maxRequirements(10), requirements(nullptr)
 {
 
 }
@@ -23,25 +23,20 @@ ResearchPlan::ResearchPlan (const Topic& topic)
 : researchTopic(topic), numberOfRequirements(0), maxRequirements(10),
   requirements(new Topic[maxRequirements])
 {
-    requirements[0] = topic;
 }
 
 ResearchPlan::ResearchPlan(const ResearchPlan& other)
 :
     researchTopic(other.researchTopic),
-    numberOfRequirements(other.numberOfRequirements),
+    //This is set to 0 because each time we add a reuiremnts
+    //whic the addRequirement function it will also increment the value
+    //of numberOfRequirements
+    numberOfRequirements(0),
     maxRequirements(other.maxRequirements),
     requirements(new Topic[other.maxRequirements])
 {
-    cout << "Copy constructor " << numberOfRequirements << endl;
     for(int i = 0; i < other.numberOfRequirements; i++)
         addRequirement(other.requirements[i]);
-}
-
-
-int ResearchPlan::getNumberOfRequirements() const
-{
-	return numberOfRequirements;
 }
 
 
@@ -90,15 +85,24 @@ const ResearchPlan& ResearchPlan::operator=(const ResearchPlan& other){
     return *this;
 }
 
-
 bool operator==(const ResearchPlan one, const ResearchPlan two)
 {
-	return one.getTopic().name == two.getTopic().name
-		&& one.getNumberOfRequirements() == two.getNumberOfRequirements();
+	bool result = one.getTopic().name == two.getTopic().name
+	&& one.getNumberOfRequirements() == two.getNumberOfRequirements();
+	if(!result) return result;
+
+	for(int i = 0; i < one.getNumberOfRequirements(); i++){
+        if(!(one.getRequirement(i) == two.getRequirement(i)))
+            return false;
+	}
+	return true;
 }
 
 bool operator<(const ResearchPlan one, const ResearchPlan two)
 {
-	return one.getNumberOfRequirements() < two.getNumberOfRequirements()
-		&& one.getNumberOfRequirements() == two.getNumberOfRequirements();
+    bool topicOneLess = one.getTopic() < two.getTopic();
+    bool oneNRLess = one.getNumberOfRequirements() <= two.getNumberOfRequirements();
+    bool result = topicOneLess && oneNRLess;
+
+    return result;
 }

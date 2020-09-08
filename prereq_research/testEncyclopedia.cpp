@@ -31,8 +31,6 @@ UnitTest(EncyclopediaAddCourse) {
 	assertFalse(enc.containsTopic(mapping));
 	assertFalse(enc.containsTopic(trading));
 
-    assertThat(MemoryChecked::getCurrentCount(), isEqualTo(0));
-
 	set<Topic> expected1 {alphabet, commerce};
 	set<Topic> observed1;
 	transform(enc.begin(), enc.end(), inserter(observed1, observed1.begin()),
@@ -84,6 +82,7 @@ UnitTest(EncyclopediaAddCourse) {
 	assertThat(observed3, isEqualTo(expected3));
 
 	auto plan = enc.getPlan(commerce);
+	cout << "The topic here is " << plan.getTopic();
     assertThat (plan.getTopic(), isEqualTo(commerce));
     assertThat(plan.getNumberOfRequirements(), isEqualTo(1));
 

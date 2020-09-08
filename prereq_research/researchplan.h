@@ -57,7 +57,7 @@ public:
 	/**
 	 * @return the number of known requirements for this plan.
 	 */
-	int getNumberOfRequirements() const;
+	int getNumberOfRequirements() const{return numberOfRequirements;};
 
 	/**
 	 * Adds topic to the list of requirements for this plan.

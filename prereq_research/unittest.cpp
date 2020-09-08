@@ -805,7 +805,6 @@ int main(int argc, char** argv)
 
 	UnitTest::report();
 
-	std::cout << "done" << endl;
 	return 0;
 }
 

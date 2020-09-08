@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1599543606 source:c:\users\mattl\source\repos\cs-361\prereq_research\encyclopedia.cpp
+1599549050 source:c:\users\mattl\source\repos\cs-361\prereq_research\encyclopedia.cpp
 	<algorithm>
 	<iterator>
 	<sstream>
@@ -12,12 +12,12 @@
 	<vector>
 	"researchplan.h"
 
-1599357461 c:\users\mattl\source\repos\cs-361\prereq_research\researchplan.h
+1599548515 c:\users\mattl\source\repos\cs-361\prereq_research\researchplan.h
 	<iostream>
 	<string>
 	"topic.h"
 
-1599434627 c:\users\mattl\source\repos\cs-361\prereq_research\topic.h
+1599547961 c:\users\mattl\source\repos\cs-361\prereq_research\topic.h
 	<iostream>
 	<string>
 	"memoryChecked.h"
@@ -33,7 +33,7 @@
 	"memoryChecked.h"
 	<iostream>
 
-1599544447 source:c:\users\mattl\source\repos\cs-361\prereq_research\permittedresearch.cpp
+1599545419 source:c:\users\mattl\source\repos\cs-361\prereq_research\permittedresearch.cpp
 	<algorithm>
 	<iostream>
 	<fstream>
@@ -45,7 +45,7 @@
 	"memoryChecked.h"
 	"researchplan.h"
 
-1599543163 source:c:\users\mattl\source\repos\cs-361\prereq_research\testencyclopedia.cpp
+1599546836 source:c:\users\mattl\source\repos\cs-361\prereq_research\testencyclopedia.cpp
 	"unittest.h"
 	<sstream>
 	<algorithm>
@@ -62,17 +62,17 @@
 	<string>
 	<vector>
 
-1599542913 source:c:\users\mattl\source\repos\cs-361\prereq_research\testresearchplan.cpp
+1599549909 source:c:\users\mattl\source\repos\cs-361\prereq_research\testresearchplan.cpp
 	"unittest.h"
 	<sstream>
 	"researchplan.h"
 
-1599434627 source:c:\users\mattl\source\repos\cs-361\prereq_research\topic.cpp
+1599546353 source:c:\users\mattl\source\repos\cs-361\prereq_research\topic.cpp
 	"topic.h"
 	<iostream>
 	<string>
 
-1599541824 source:c:\users\mattl\source\repos\cs-361\prereq_research\unittest.cpp
+1599548904 source:c:\users\mattl\source\repos\cs-361\prereq_research\unittest.cpp
 	<algorithm>
 	<iostream>
 	<iomanip>
@@ -93,7 +93,7 @@
 	<winbase.h>
 	<w32api/debugapi.h>
 
-1599544077 source:c:\users\mattl\source\repos\cs-361\prereq_research\researchplan.cpp
+1599551741 source:c:\users\mattl\source\repos\cs-361\prereq_research\researchplan.cpp
 	"researchplan.h"
 	<cassert>
 	<iostream>
