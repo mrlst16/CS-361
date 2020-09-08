@@ -34,7 +34,7 @@ ResearchPlan::ResearchPlan(const ResearchPlan& other)
     requirements(new Topic[other.numberOfRequirements])
 {
     for(int i = 0; i < other.numberOfRequirements; i++)
-        this->addRequirement(other.requirements[i]);
+        addRequirement(other.requirements[i]);
 }
 
 

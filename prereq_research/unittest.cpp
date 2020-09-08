@@ -348,6 +348,7 @@ void UnitTest::runTestUntimed (unsigned testNumber, std::string testName, TestFu
 // Run a single unit test function.
 void UnitTest::runTest (unsigned testNumber, std::string testName, TestFunction u, long timeLimit)
 {
+    cout << "TestNumber: " << testNumber << ", TestName: " << testName << endl;
 	if (timeLimit > 0L && !debuggerIsRunning())
 	{
 		int testResult = -99; // 1== passed, 0 == failed, -1 == error
@@ -434,6 +435,7 @@ void UnitTest::runTest (unsigned testNumber, std::string testName, TestFunction 
 // Special case: If nTests == 0, runs all unit Tests.
 void UnitTest::runTests (int nTests, char** testNames, char* program)
 {
+    std::cout << "running tests " << std::endl;
 	std::set<std::string> testsToRun;
 	// Check for GTest emulation
 	for (int i = 0; i < nTests; ++i)
@@ -795,9 +797,12 @@ CppUnitLite::NotNullMatcher isNotNull()
 
 
 #ifndef NOMAIN
+using namespace std;
 
 int main(int argc, char** argv)
 {
+    cout << "beginning testing" << endl;
+    cout << "NumTests: " << argc-1 << " " << argv+1 << " " << argv[0];
 	UnitTest::diagnosticMessagesBeforeResults = true;
 	UnitTest::runTests(argc-1, argv+1, argv[0]);
 

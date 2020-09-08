@@ -87,30 +87,30 @@ void permittedResearch(const Encyclopedia& encyc,
 	cout << "The cheapest to research is " << lowestCostTopic << endl;
 }
 
-
-
-int main (int argc, char** argv)
-{
-	{
-		Encyclopedia encyclopedia;
-		vector<string> alreadyResearched;
-		if (argc > 1)
-		{
-			ifstream in (argv[1]);
-			encyclopedia.read (in);
-			readPlayerInfo (in, alreadyResearched);
-		}
-		else
-		{
-			encyclopedia.read (cin);
-			readPlayerInfo (cin, alreadyResearched);
-		}
-		permittedResearch (encyclopedia, alreadyResearched);
-	}
-	if (MemoryChecked::getCurrentCount() > 0)
-	{
-		cout << "**Memory leaks detected: " << MemoryChecked::getCurrentCount()
-		<< endl;
-	}
-	return 0;
-}
+//
+//
+//int main (int argc, char** argv)
+//{
+//	{
+//		Encyclopedia encyclopedia;
+//		vector<string> alreadyResearched;
+//		if (argc > 1)
+//		{
+//			ifstream in (argv[1]);
+//			encyclopedia.read (in);
+//			readPlayerInfo (in, alreadyResearched);
+//		}
+//		else
+//		{
+//			encyclopedia.read (cin);
+//			readPlayerInfo (cin, alreadyResearched);
+//		}
+//		permittedResearch (encyclopedia, alreadyResearched);
+//	}
+//	if (MemoryChecked::getCurrentCount() > 0)
+//	{
+//		cout << "**Memory leaks detected: " << MemoryChecked::getCurrentCount()
+//		<< endl;
+//	}
+//	return 0;
+//}

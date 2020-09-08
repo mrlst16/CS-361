@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1599434627 source:c:\users\mattl\source\repos\cs-361\prereq_research\encyclopedia.cpp
+1599436532 source:c:\users\mattl\source\repos\cs-361\prereq_research\encyclopedia.cpp
 	<algorithm>
 	<iterator>
 	<sstream>
@@ -33,7 +33,7 @@
 	"memoryChecked.h"
 	<iostream>
 
-1599434627 source:c:\users\mattl\source\repos\cs-361\prereq_research\permittedresearch.cpp
+1599446443 source:c:\users\mattl\source\repos\cs-361\prereq_research\permittedresearch.cpp
 	<algorithm>
 	<iostream>
 	<fstream>
@@ -72,7 +72,7 @@
 	<iostream>
 	<string>
 
-1599434627 source:c:\users\mattl\source\repos\cs-361\prereq_research\unittest.cpp
+1599529450 source:c:\users\mattl\source\repos\cs-361\prereq_research\unittest.cpp
 	<algorithm>
 	<iostream>
 	<iomanip>
@@ -93,7 +93,7 @@
 	<winbase.h>
 	<w32api/debugapi.h>
 
-1599436438 source:c:\users\mattl\source\repos\cs-361\prereq_research\researchplan.cpp
+1599439701 source:c:\users\mattl\source\repos\cs-361\prereq_research\researchplan.cpp
 	"researchplan.h"
 	<cassert>
 	<iostream>
