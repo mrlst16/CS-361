@@ -31,7 +31,7 @@ ResearchPlan::ResearchPlan(const ResearchPlan& other)
     researchTopic(other.researchTopic),
     numberOfRequirements(other.numberOfRequirements),
     maxRequirements(other.maxRequirements),
-    requirements(new Topic[other.numberOfRequirements])
+    requirements(new Topic[other.maxRequirements])
 {
     cout << "Copy constructor " << numberOfRequirements << endl;
     for(int i = 0; i < other.numberOfRequirements; i++)
