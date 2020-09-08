@@ -6,12 +6,15 @@ using namespace std;
 
 
 UnitTest(ResearchPlanDefaultConstructor) {
+	assertThat(MemoryChecked::getCurrentCount(), isEqualTo(0));
+	std::cout << "Trace 1" <<std::endl;
 	ResearchPlan plan;
 	assertThat (plan.getTopic(), isEqualTo(Topic()));
 	assertThat (plan.getNumberOfRequirements(), isEqualTo(0));
 	assertThat (plan, isEqualTo(ResearchPlan()));
 	assertThat (plan, not(isLessThan(ResearchPlan())));
 	assertThat (plan, not(isGreaterThan(ResearchPlan())));
+	assertThat(MemoryChecked::getCurrentCount(), isEqualTo(0));
 }
 
 UnitTest(ResearchPlanConstructor) {

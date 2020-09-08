@@ -136,6 +136,7 @@ ResearchPlan& Encyclopedia::findOrAdd (const std::string& topicName)
 			return plan;
 	}
 	ResearchPlan newPlan (Topic(topicName, 0));
+	std::cout << "Topic Name " << topicName << std::endl;
 	plans.push_back(newPlan);
 	return plans.back();
 }

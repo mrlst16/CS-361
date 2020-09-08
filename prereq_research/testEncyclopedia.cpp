@@ -15,6 +15,7 @@ UnitTest(EncyclopediaConstructor) {
 
 
 UnitTest(EncyclopediaAddCourse) {
+    assertThat(MemoryChecked::getCurrentCount(), isEqualTo(0));
 	Topic alphabet ("Alphabet", 15);
 	Topic commerce ("Commerce", 25);
 	Topic sailing ("Sailing", 36);
@@ -29,6 +30,8 @@ UnitTest(EncyclopediaAddCourse) {
 	assertFalse(enc.containsTopic(sailing));
 	assertFalse(enc.containsTopic(mapping));
 	assertFalse(enc.containsTopic(trading));
+
+    assertThat(MemoryChecked::getCurrentCount(), isEqualTo(0));
 
 	set<Topic> expected1 {alphabet, commerce};
 	set<Topic> observed1;

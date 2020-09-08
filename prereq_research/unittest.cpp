@@ -487,6 +487,7 @@ void UnitTest::runTests (int nTests, char** testNames, char* program)
 
 	// Emit TAP plan line
 	UnitTest::msg ("1.." + std::to_string(testsToRun.size()));
+	std::cout << badTestSpecifications << std::endl;
 	UnitTest::msg (badTestSpecifications);
 
 	unsigned testNumber = 1;
@@ -804,6 +805,7 @@ int main(int argc, char** argv)
 
 	UnitTest::report();
 
+	std::cout << "done" << endl;
 	return 0;
 }
 
