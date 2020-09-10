@@ -2,14 +2,20 @@
 #define BOOK_H
 
 #include <string>
+#include "AuthorIterator.h"
 
 class Author;
 class Publisher;
 
 using namespace std;
+
 class Book {
 
 public:
+
+    typedef AuthorIterator iterator;
+    typedef AuthorConstIterator const_iterator;
+
     Book();
 
     //Copy Constructor
@@ -48,6 +54,15 @@ public:
     bool operator<(const Book& other) const;
 
     int numberOfAuthors() const {return _numAuthors;}
+
+    //Iterator stuff
+    iterator begin();
+    const_iterator begin() const;
+    iterator end();
+    //???? How can this be called? Because the const looks to change the signature
+    //But the same number of params remains...
+    const_iterator end() const;
+
 protected:
 private:
     string _title;

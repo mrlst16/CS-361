@@ -3,6 +3,8 @@
 #include "Publisher.h"
 #include <ostream>
 #include <iostream>
+#include<vector>
+#include "AuthorIterator.h"
 
 using namespace std;
 
@@ -60,6 +62,44 @@ ostream& operator<< (ostream& out, const Book& book){
 	return out;
 }
 
+double Sum(std::vector<double>& v){
+    double result = 0;
+    for(std::vector<double>::iterator it = v.begin(); it != v.end(); ++it){
+        result += *it;
+    }
+
+    return result;
+}
+
+double Sum2(std::vector<double>& v){
+    double result = 0;
+    std::vector<double>::iterator it = v.begin();
+    while(it != v.end()){
+        result += *it;
+        ++it;
+    }
+    return result;
+}
+
+Book::iterator Book::begin(){
+    AuthorIterator b;
+    b.position = _authors;
+    return b;
+}
+
+Book::iterator Book::end(){
+    AuthorIterator b;
+    //????Why and how are we adding an integer to this "dynamic array"
+    //Looks like in pointer addition, you point to so many bytes or
+    //"positions" ahead by adding an int to a pointer
+    //This is a "logical" and not a numerical addition
+    b.position = _authors+_numAuthors;
+    return b;
+}
+
 int main(){
+
+//    vector<double>& numbers(){};
+
     std::cout << "main" << std::endl;
 }

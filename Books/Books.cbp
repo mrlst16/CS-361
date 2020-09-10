@@ -35,6 +35,8 @@
 		</Compiler>
 		<Unit filename="Address.cpp" />
 		<Unit filename="Address.h" />
+		<Unit filename="AuthIterator.cpp" />
+		<Unit filename="AuthIterator.h" />
 		<Unit filename="Author.cpp" />
 		<Unit filename="Author.h" />
 		<Unit filename="Book.cpp" />
