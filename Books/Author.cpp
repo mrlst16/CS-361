@@ -11,3 +11,9 @@ ostream& operator<<(ostream& out, const Author& author){
     out << author.getName();
     return out;
 }
+
+Author& Author::operator=(const Author& other){
+
+    throw "Not yet implemented";
+    return *this;
+}

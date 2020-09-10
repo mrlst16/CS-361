@@ -25,7 +25,7 @@ public:
     Book(
         const string& title,
         const string& isbn,
-        const Publisher& publisher,
+        Publisher& publisher,
         Author* authors = nullptr,
         int numauthors = 0
      );
@@ -33,9 +33,24 @@ public:
      Book(
         const std::string& title,
         const std::string& isbn,
-        const Publisher& publisher,
+        Publisher& publisher,
         const Author& author1
         );
+
+    Book(
+        const std::string& title,
+        const std::string& isbn,
+        Publisher& publisher,
+        const initializer_list<Author> authors
+        );
+
+    template <typename Iterator>
+    Book (std::string theTitle,
+          const Publisher* publ,
+            Iterator startAuthors,
+            Iterator stopAuthors,
+            std::string theISBN
+            );
 
     string getTitle() const{return _title;};
     void setTitle(const string& newTitle);
@@ -50,6 +65,7 @@ public:
     void removeAuthor(const Author& author);
     Author getAuthor(int i) const;
 
+    Book& operator=(const Book& other);
     bool operator==(const Book& other) const;
     bool operator<(const Book& other) const;
 
@@ -66,7 +82,7 @@ public:
 protected:
 private:
     string _title;
-    const Publisher& _publisher;
+    Publisher& _publisher;
     string _isbn;
     Author* _authors;  // array of authors
     int _numAuthors;

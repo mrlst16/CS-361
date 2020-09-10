@@ -8,10 +8,12 @@
 
 using namespace std;
 
+
+
 Book::Book(
         const string& title,
         const string& isbn,
-        const Publisher& publisher,
+        Publisher& publisher,
         Author* authors,
         int numauthors
 ) :
@@ -28,7 +30,7 @@ Book::Book(
 Book::Book(
         const string& title,
         const string& isbn,
-        const Publisher& publisher,
+        Publisher& publisher,
         const Author& author
 ) :
     _title(title),
@@ -39,8 +41,18 @@ Book::Book(
 
 }
 
-void Book::addAuthor(const Author& author){
+Book& Book::operator=(const Book& book){
+    _authors = book._authors;
+    _numAuthors = book._numAuthors;
+    _isbn = book._isbn;
+    _publisher = book._publisher;
+    _title = book._title;
+    return *this;
+}
 
+void Book::addAuthor(const Author& author){
+    _authors[_numAuthors] = author;
+    _numAuthors++;
 }
 
 void Book::removeAuthor(const Author& author){
@@ -60,6 +72,20 @@ ostream& operator<< (ostream& out, const Book& book){
 	}
 	out << "; " << book.getPublisher() << ", " << book.getISBN();
 	return out;
+}
+
+Book::Book(
+    const std::string& title,
+    const std::string& isbn,
+    Publisher& publisher,
+    const initializer_list<Author> authors
+ )
+:   _title(title),
+    _isbn(isbn),
+    _publisher(publisher)
+{
+    for(auto it = authors.begin(); it != authors.end(); ++it)
+        this->addAuthor(*it);
 }
 
 double Sum(std::vector<double>& v){
@@ -97,9 +123,20 @@ Book::iterator Book::end(){
     return b;
 }
 
+template <typename Iterator>
+Book::Book (std::string theTitle, const Publisher* publ,
+            Iterator startAuthors, Iterator stopAuthors,
+            std::string theISBN)
+ : _title(theTitle), _publisher(publ),
+   _numAuthors(0), _authors(new Author*[10]),
+   _isbn(theISBN)
+{
+    for(auto it = startAuthors; it != stopAuthors; ++it)
+        addAuthor(*it);
+};
+
 int main(){
 
-//    vector<double>& numbers(){};
 
     std::cout << "main" << std::endl;
 }

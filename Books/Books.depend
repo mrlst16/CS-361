@@ -6,21 +6,21 @@
 1599019863 c:\users\mattl\source\repos\cs-361\books\address.h
 	<string>
 
-1599145570 source:c:\users\mattl\source\repos\cs-361\books\author.cpp
+1599705994 source:c:\users\mattl\source\repos\cs-361\books\author.cpp
 	"Author.h"
 	<ostream>
 
-1599145570 c:\users\mattl\source\repos\cs-361\books\author.h
+1599705690 c:\users\mattl\source\repos\cs-361\books\author.h
 	<string>
 	"Address.h"
 	"Book.h"
 	<ostream>
 
-1599699033 c:\users\mattl\source\repos\cs-361\books\book.h
+1599706950 c:\users\mattl\source\repos\cs-361\books\book.h
 	<string>
 	"AuthorIterator.h"
 
-1599699088 source:c:\users\mattl\source\repos\cs-361\books\book.cpp
+1599706403 source:c:\users\mattl\source\repos\cs-361\books\book.cpp
 	"Book.h"
 	"Author.h"
 	"Publisher.h"
@@ -47,6 +47,7 @@
 1599704222 c:\users\mattl\source\repos\cs-361\books\authoriterator.h
 	<iterator>
 
-1599697999 source:c:\users\mattl\source\repos\cs-361\books\authoriterator.cpp
+1599704748 source:c:\users\mattl\source\repos\cs-361\books\authoriterator.cpp
 	"AuthorIterator.h"
+	"Author.h"
 

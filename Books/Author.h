@@ -26,6 +26,8 @@ class Author
 
         void addBook(const Book* b);
         void removeBook(const Book* book);
+
+        Author& operator=(const Author& other);
     protected:
 
     private:
