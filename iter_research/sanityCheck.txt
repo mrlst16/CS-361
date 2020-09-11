@@ -1,0 +1,24 @@
+type = class ResearchPlan {
+  private:
+    Topic researchTopic;
+    std::__debug::vector<Topic, std::allocator<Topic> > requirements;
+
+  public:
+    ResearchPlan(void);
+    ResearchPlan(const Topic &);
+    ResearchPlan(const Topic &, std::initializer_list<Topic>);
+    const Topic & getTopic(void) const;
+    Topic & getTopic(void);
+    int getNumberOfRequirements(void) const;
+    void addRequirement(const Topic &);
+    void removeRequirement(const Topic &);
+    iterator begin(void);
+    const_iterator begin(void) const;
+    iterator end(void);
+    const_iterator end(void) const;
+    bool operator==(const ResearchPlan &) const;
+    bool operator<(const ResearchPlan &) const;
+
+    typedef std::__debug::vector<Topic, std::allocator<Topic> >::iterator iterator;
+    typedef std::__debug::vector<Topic, std::allocator<Topic> >::const_iterator const_iterator;
+}
