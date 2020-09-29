@@ -1,0 +1,12 @@
+encyclopedia.o: encyclopedia.cpp encyclopedia.h researchplan.h topic.h \
+ memoryChecked.h nosuchplan.h
+topic.o: topic.cpp topic.h memoryChecked.h
+unittest.o: unittest.cpp unittest.h
+testEncyclopedia.o: testEncyclopedia.cpp unittest.h encyclopedia.h \
+ researchplan.h topic.h memoryChecked.h
+testResearchPlan.o: testResearchPlan.cpp researchplan.h topic.h \
+ memoryChecked.h unittest.h
+memoryChecked.o: memoryChecked.cpp memoryChecked.h
+permittedResearch.o: permittedResearch.cpp encyclopedia.h researchplan.h \
+ topic.h memoryChecked.h
+researchplan.o: researchplan.cpp researchplan.h topic.h memoryChecked.h

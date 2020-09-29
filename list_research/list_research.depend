@@ -1,0 +1,109 @@
+# depslib dependency file v1.0
+1601338535 source:c:\users\mattl\source\repos\cs-361\list_research\memorychecked.cpp
+	"memoryChecked.h"
+	<iostream>
+
+1601338535 c:\users\mattl\source\repos\cs-361\list_research\memorychecked.h
+	<exception>
+
+1601338536 source:c:\users\mattl\source\repos\cs-361\list_research\topic.cpp
+	"topic.h"
+	<iostream>
+	<string>
+
+1601338536 c:\users\mattl\source\repos\cs-361\list_research\topic.h
+	<iostream>
+	<string>
+	"memoryChecked.h"
+
+1601338536 source:c:\users\mattl\source\repos\cs-361\list_research\unittest.cpp
+	<algorithm>
+	<iostream>
+	<iomanip>
+	<set>
+	<sstream>
+	<fstream>
+	<chrono>
+	<thread>
+	<mutex>
+	<regex>
+	<iterator>
+	<signal.h>
+	<setjmp.h>
+	<cstdlib>
+	<unistd.h>
+	"unittest.h"
+	<debugapi.h>
+	<winbase.h>
+	<w32api/debugapi.h>
+
+1601338536 c:\users\mattl\source\repos\cs-361\list_research\unittest.h
+	<algorithm>
+	<cstdarg>
+	<iostream>
+	<map>
+	<sstream>
+	<string>
+	<vector>
+
+1601338535 source:c:\users\mattl\source\repos\cs-361\list_research\encyclopedia.cpp
+	<algorithm>
+	<iterator>
+	<sstream>
+	<vector>
+	"encyclopedia.h"
+	"nosuchplan.h"
+
+1601338535 c:\users\mattl\source\repos\cs-361\list_research\encyclopedia.h
+	<iostream>
+	<vector>
+	"researchplan.h"
+
+1601344527 c:\users\mattl\source\repos\cs-361\list_research\researchplan.h
+	<iostream>
+	<string>
+	<vector>
+	<array>
+	<list>
+	"topic.h"
+	<algorithm>
+
+1601338535 c:\users\mattl\source\repos\cs-361\list_research\nosuchplan.h
+	<string>
+	<exception>
+
+1600045818 source:c:\users\mattl\source\repos\cs-361\list_research\researchplan.cpp
+	"researchplan.h"
+	<cassert>
+	<iostream>
+	<string>
+	<utility>
+	<vector>
+
+1601338535 source:c:\users\mattl\source\repos\cs-361\list_research\testencyclopedia.cpp
+	"unittest.h"
+	<sstream>
+	<algorithm>
+	<iterator>
+	<set>
+	"encyclopedia.h"
+
+1601338535 source:c:\users\mattl\source\repos\cs-361\list_research\testresearchplan.cpp
+	"researchplan.h"
+	"unittest.h"
+	<array>
+	<list>
+	<sstream>
+
+1601338969 source:c:\users\mattl\source\repos\cs-361\list_research\permittedresearch.cpp
+	<algorithm>
+	<iostream>
+	<fstream>
+	<limits>
+	<iomanip>
+	<string>
+	<vector>
+	"encyclopedia.h"
+	"memoryChecked.h"
+	"researchplan.h"
+

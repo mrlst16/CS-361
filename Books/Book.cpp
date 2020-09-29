@@ -5,10 +5,9 @@
 #include <iostream>
 #include<vector>
 #include "AuthorIterator.h"
+#include<array>
 
 using namespace std;
-
-
 
 Book::Book(
         const string& title,
@@ -131,12 +130,11 @@ Book::Book (std::string theTitle, const Publisher* publ,
    _numAuthors(0), _authors(new Author*[10]),
    _isbn(theISBN)
 {
-    for(auto it = startAuthors; it != stopAuthors; ++it)
+    for(Iterator it = startAuthors; it != stopAuthors; ++it)
         addAuthor(*it);
 };
 
 int main(){
-
-
+    std::array<string
     std::cout << "main" << std::endl;
 }

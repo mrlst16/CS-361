@@ -1,0 +1,25 @@
+Alphabet: 28
+Bronze Working: 28
+Ceremonial Burial: 28
+Code of Laws: Alphabet, 79
+Currency: Bronze Working, 79
+Horseback Riding: 28
+Iron Working: Bronze Working, Warrior Code, 136
+Map Making: Alphabet, 79
+Masonry: 28
+Mathematics: Alphabet, Masonry, 136
+Mysticism: Ceremonial Burial, 79
+Polytheism: Horseback Riding, Ceremonial Burial, 136
+Pottery: 28
+The Wheel: Horseback Riding, 79
+Warrior Code: 28
+Writing: Alphabet, 79
+---
+Bronze Working
+Ceremonial Burial
+Horseback Riding
+Warrior Code
+Alphabet
+Masonry
+Pottery
+---

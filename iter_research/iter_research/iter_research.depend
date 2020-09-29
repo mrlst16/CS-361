@@ -1,0 +1,217 @@
+# depslib dependency file v1.0
+1599708829 source:c:\users\mattl\source\repos\cs-361\iter_research\memorychecked.cpp
+	"memoryChecked.h"
+	<iostream>
+
+1599708829 c:\users\mattl\source\repos\cs-361\iter_research\memorychecked.h
+	<exception>
+
+1599708830 source:c:\users\mattl\source\repos\cs-361\iter_research\topic.cpp
+	"topic.h"
+	<iostream>
+	<string>
+
+1599708830 c:\users\mattl\source\repos\cs-361\iter_research\topic.h
+	<iostream>
+	<string>
+	"memoryChecked.h"
+
+1599708830 source:c:\users\mattl\source\repos\cs-361\iter_research\unittest.cpp
+	<algorithm>
+	<iostream>
+	<iomanip>
+	<set>
+	<sstream>
+	<fstream>
+	<chrono>
+	<thread>
+	<mutex>
+	<regex>
+	<iterator>
+	<signal.h>
+	<setjmp.h>
+	<cstdlib>
+	<unistd.h>
+	"unittest.h"
+	<debugapi.h>
+	<winbase.h>
+	<w32api/debugapi.h>
+
+1599951974 c:\users\mattl\source\repos\cs-361\iter_research\unittest.h
+	<algorithm>
+	<cstdarg>
+	<iostream>
+	<map>
+	<sstream>
+	<string>
+	<vector>
+
+1599708829 source:c:\users\mattl\source\repos\cs-361\iter_research\encyclopedia.cpp
+	<algorithm>
+	<iterator>
+	<sstream>
+	<vector>
+	"encyclopedia.h"
+	"nosuchplan.h"
+
+1599708829 c:\users\mattl\source\repos\cs-361\iter_research\encyclopedia.h
+	<iostream>
+	<vector>
+	"researchplan.h"
+
+1600029801 c:\users\mattl\source\repos\cs-361\iter_research\researchplan.h
+	<iostream>
+	<string>
+	<vector>
+	<array>
+	<list>
+	"topic.h"
+	<algorithm>
+
+1599708829 c:\users\mattl\source\repos\cs-361\iter_research\nosuchplan.h
+	<string>
+	<exception>
+
+1600029880 source:c:\users\mattl\source\repos\cs-361\iter_research\researchplan.cpp
+	"researchplan.h"
+	<cassert>
+	<iostream>
+	<string>
+	<utility>
+	<vector>
+
+1599708830 source:c:\users\mattl\source\repos\cs-361\iter_research\testencyclopedia.cpp
+	"unittest.h"
+	<sstream>
+	<algorithm>
+	<iterator>
+	<set>
+	"encyclopedia.h"
+
+1599729729 source:c:\users\mattl\source\repos\cs-361\iter_research\permittedresearch.cpp
+	<algorithm>
+	<iostream>
+	<fstream>
+	<limits>
+	<iomanip>
+	<string>
+	<vector>
+	"encyclopedia.h"
+	"memoryChecked.h"
+	"researchplan.h"
+
+1600028531 source:c:\users\mattl\source\repos\cs-361\iter_research\testresearchplan.cpp
+	"researchplan.h"
+	"unittest.h"
+	<array>
+	<list>
+	<sstream>
+
+1600044465 source:c:\users\mattl\source\repos\cs-361\iter_research\iter_research\encyclopedia.cpp
+	<algorithm>
+	<iterator>
+	<sstream>
+	<vector>
+	"encyclopedia.h"
+	"nosuchplan.h"
+
+1599708829 c:\users\mattl\source\repos\cs-361\iter_research\iter_research\encyclopedia.h
+	<iostream>
+	<vector>
+	"researchplan.h"
+
+1600029801 c:\users\mattl\source\repos\cs-361\iter_research\iter_research\researchplan.h
+	<iostream>
+	<string>
+	<vector>
+	<array>
+	<list>
+	"topic.h"
+	<algorithm>
+
+1599708830 c:\users\mattl\source\repos\cs-361\iter_research\iter_research\topic.h
+	<iostream>
+	<string>
+	"memoryChecked.h"
+
+1599708829 c:\users\mattl\source\repos\cs-361\iter_research\iter_research\memorychecked.h
+	<exception>
+
+1599708829 c:\users\mattl\source\repos\cs-361\iter_research\iter_research\nosuchplan.h
+	<string>
+	<exception>
+
+1599708829 source:c:\users\mattl\source\repos\cs-361\iter_research\iter_research\memorychecked.cpp
+	"memoryChecked.h"
+	<iostream>
+
+1599729729 source:c:\users\mattl\source\repos\cs-361\iter_research\iter_research\permittedresearch.cpp
+	<algorithm>
+	<iostream>
+	<fstream>
+	<limits>
+	<iomanip>
+	<string>
+	<vector>
+	"encyclopedia.h"
+	"memoryChecked.h"
+	"researchplan.h"
+
+1600044246 source:c:\users\mattl\source\repos\cs-361\iter_research\iter_research\testencyclopedia.cpp
+	"unittest.h"
+	<sstream>
+	<algorithm>
+	<iterator>
+	<set>
+	"encyclopedia.h"
+
+1599951974 c:\users\mattl\source\repos\cs-361\iter_research\iter_research\unittest.h
+	<algorithm>
+	<cstdarg>
+	<iostream>
+	<map>
+	<sstream>
+	<string>
+	<vector>
+
+1600035187 source:c:\users\mattl\source\repos\cs-361\iter_research\iter_research\testresearchplan.cpp
+	"researchplan.h"
+	"unittest.h"
+	<array>
+	<list>
+	<sstream>
+
+1599708830 source:c:\users\mattl\source\repos\cs-361\iter_research\iter_research\topic.cpp
+	"topic.h"
+	<iostream>
+	<string>
+
+1599708830 source:c:\users\mattl\source\repos\cs-361\iter_research\iter_research\unittest.cpp
+	<algorithm>
+	<iostream>
+	<iomanip>
+	<set>
+	<sstream>
+	<fstream>
+	<chrono>
+	<thread>
+	<mutex>
+	<regex>
+	<iterator>
+	<signal.h>
+	<setjmp.h>
+	<cstdlib>
+	<unistd.h>
+	"unittest.h"
+	<debugapi.h>
+	<winbase.h>
+	<w32api/debugapi.h>
+
+1600035994 source:c:\users\mattl\source\repos\cs-361\iter_research\iter_research\researchplan.cpp
+	"researchplan.h"
+	<cassert>
+	<iostream>
+	<string>
+	<utility>
+	<vector>
+
