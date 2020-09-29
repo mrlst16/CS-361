@@ -10,47 +10,9 @@
 using namespace std;
 
 template <typename T>
-void addSort(list<T>& lst, T item) {
-
-	if (lst.size() == 0) {
-		cout << "inserting point 0" << endl;
-		lst.insert(lst.begin(), item);
-		return;
-	}
-
-	auto start = lst.begin();
-	T* previousP = &(*start);
-
-	for (auto it = start; it != lst.end(); it++) {
-
-		T previous = *previousP;
-		T current = *it;
-		cout << "inserting point 1" << endl;
-
-		if (
-			(previous < item && item < current)
-			|| item == previous
-			|| item == current
-			) {
-			cout << "inserting point 1 prev = " << previous << ", current = " << current << endl;
-			lst.insert(it++, item);
-			return;
-		}
-
-		previousP = &current;
-	}
-
-	cout << "You have reached the end" << endl;
-	lst.insert(lst.end(), item);
-
-}
-
-
-template <typename T>
 void addSortUnique(list<T>& lst, T item) {
 
 	if (lst.size() == 0) {
-		cout << "inserting point 0" << endl;
 		lst.insert(lst.begin(), item);
 		return;
 	}
@@ -58,28 +20,34 @@ void addSortUnique(list<T>& lst, T item) {
 	auto start = lst.begin();
 	T* previousP = &(*start);
 
+	if(item < (*previousP)){
+        //cout << "Found a pre req" << endl;
+        lst.push_front(item);
+        return;
+    }
+
 	for (auto it = start; it != lst.end(); it++) {
 
 		T previous = *previousP;
 		T current = *it;
+
 
 		if(
             item == previous
 			|| item == current
+                //Do nothing, because we don't want duplicates
 			)
 			return;
 		if (
 			(previous < item && item < current)
 			) {
-			cout << "inserting point 1 prev = " << previous << ", current = " << current << endl;
-			lst.insert(it++, item);
+			lst.insert(it, item);
 			return;
 		}
 
 		previousP = &current;
 	}
 
-	cout << "You have reached the end" << endl;
 	lst.insert(lst.end(), item);
 
 }
@@ -135,13 +103,22 @@ void ResearchPlan::removeRequirement(const Topic& topic)
 Topic ResearchPlan::getRequirement(int i) const
 {
     auto it = this->requirements.begin();
-    if(i > 0){
-        std::advance(it, i-1);
+    int counter = 0;
+    for(auto it = begin(); it != end(); ++it)
+    {
+        if(counter == i)
+            return *it;
+
+        i++;
     }
-    int numReq = this->getNumberOfRequirements();
-    if(i >= numReq - 1){
-        std::advance(it, numReq-1);
-    }
+//    if(i > 0){
+//        std::advance(it, i-1);
+//    }
+//    int numReq = this->getNumberOfRequirements();
+//    if(i >= numReq - 1){
+//        cout << "Advancing " << (numReq - 1) << endl;
+//        std::advance(it, numReq-1);
+//    }
     return *it;
 }
 
@@ -156,6 +133,9 @@ bool operator==(const ResearchPlan one, const ResearchPlan two)
 	bool result = one.getTopic().name == two.getTopic().name
         && one.getNumberOfRequirements() == two.getNumberOfRequirements();
 	if(!result) return result;
+
+    if(one.getNumberOfRequirements() != two.getNumberOfRequirements())
+        return false;
 
 	for(int i = 0; i < one.getNumberOfRequirements(); i++){
         if(!(one.getRequirement(i) == two.getRequirement(i)))

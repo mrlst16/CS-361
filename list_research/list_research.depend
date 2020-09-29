@@ -16,7 +16,7 @@
 	<string>
 	"memoryChecked.h"
 
-1601338536 source:c:\users\mattl\source\repos\cs-361\list_research\unittest.cpp
+1601362261 source:c:\users\mattl\source\repos\cs-361\list_research\unittest.cpp
 	<algorithm>
 	<iostream>
 	<iomanip>
@@ -72,13 +72,14 @@
 	<string>
 	<exception>
 
-1600045818 source:c:\users\mattl\source\repos\cs-361\list_research\researchplan.cpp
+1601362871 source:c:\users\mattl\source\repos\cs-361\list_research\researchplan.cpp
 	"researchplan.h"
 	<cassert>
 	<iostream>
 	<string>
 	<utility>
 	<vector>
+	<list>
 
 1601338535 source:c:\users\mattl\source\repos\cs-361\list_research\testencyclopedia.cpp
 	"unittest.h"
@@ -88,7 +89,7 @@
 	<set>
 	"encyclopedia.h"
 
-1601338535 source:c:\users\mattl\source\repos\cs-361\list_research\testresearchplan.cpp
+1601361373 source:c:\users\mattl\source\repos\cs-361\list_research\testresearchplan.cpp
 	"researchplan.h"
 	"unittest.h"
 	<array>

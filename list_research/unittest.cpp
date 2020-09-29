@@ -803,6 +803,7 @@ int main(int argc, char** argv)
 
 	UnitTest::report();
 
+	std::cout << "That's all folks" << std::endl;
 	return 0;
 }
 
