@@ -95,16 +95,6 @@ public:
 	 */
 	void removeRequirement(const Topic& topic);
 
-	/**
-	 * Get the name of the i_th requirement.
-	 *
-	 * @precondition 0 <= i && i < getNumberofRequirements()
-	 * @param i index of the requirement to retrieve
-	 * @return a topic whose name indicates a required prior research topic.
-	 *         The cost info in the returned topic is not necessarily accurate.
-	 */
-	Topic getRequirement(int i) const;
-
 	const ResearchPlan& operator=(const ResearchPlan& other);
 
 	std::list<Topic>::iterator begin(){return requirements.begin();};

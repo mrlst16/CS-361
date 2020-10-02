@@ -59,7 +59,7 @@
 	<vector>
 	"researchplan.h"
 
-1601344527 c:\users\mattl\source\repos\cs-361\list_research\researchplan.h
+1601433929 c:\users\mattl\source\repos\cs-361\list_research\researchplan.h
 	<iostream>
 	<string>
 	<vector>
@@ -72,7 +72,7 @@
 	<string>
 	<exception>
 
-1601362871 source:c:\users\mattl\source\repos\cs-361\list_research\researchplan.cpp
+1601670709 source:c:\users\mattl\source\repos\cs-361\list_research\researchplan.cpp
 	"researchplan.h"
 	<cassert>
 	<iostream>
@@ -80,6 +80,7 @@
 	<utility>
 	<vector>
 	<list>
+	<utility>
 
 1601338535 source:c:\users\mattl\source\repos\cs-361\list_research\testencyclopedia.cpp
 	"unittest.h"
@@ -89,7 +90,7 @@
 	<set>
 	"encyclopedia.h"
 
-1601361373 source:c:\users\mattl\source\repos\cs-361\list_research\testresearchplan.cpp
+1601665982 source:c:\users\mattl\source\repos\cs-361\list_research\testresearchplan.cpp
 	"researchplan.h"
 	"unittest.h"
 	<array>

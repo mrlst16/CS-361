@@ -6,12 +6,14 @@
 #include <utility>
 #include <vector>
 #include <list>
+#include <utility>
 
 using namespace std;
 
 template <typename T>
 void addSortUnique(list<T>& lst, T item) {
 
+    cout <<  "List Size: " << lst.size() << " Topic: " << item << endl;
 	if (lst.size() == 0) {
 		lst.insert(lst.begin(), item);
 		return;
@@ -21,16 +23,17 @@ void addSortUnique(list<T>& lst, T item) {
 	T* previousP = &(*start);
 
 	if(item < (*previousP)){
-        //cout << "Found a pre req" << endl;
         lst.push_front(item);
         return;
     }
 
+    int count = 0;
 	for (auto it = start; it != lst.end(); it++) {
 
-		T previous = *previousP;
 		T current = *it;
-
+		auto prevIterator = it;
+		--prevIterator;
+		T previous = count == 0 ? *previousP : *prevIterator;
 
 		if(
             item == previous
@@ -46,10 +49,10 @@ void addSortUnique(list<T>& lst, T item) {
 		}
 
 		previousP = &current;
+		count++;
 	}
 
 	lst.insert(lst.end(), item);
-
 }
 
 ResearchPlan::ResearchPlan()
@@ -72,7 +75,7 @@ ResearchPlan::ResearchPlan(const Topic& topic, initializer_list<Topic> topicPrer
 :researchTopic(topic)
 {
     for(auto it = topicPrerequisites.begin(); it != topicPrerequisites.end(); ++it)
-        requirements.push_back(*it);
+        this->addRequirement(*it);
 }
 
 ResearchPlan::ResearchPlan(const ResearchPlan& other)
@@ -100,28 +103,6 @@ void ResearchPlan::removeRequirement(const Topic& topic)
     }
 }
 
-Topic ResearchPlan::getRequirement(int i) const
-{
-    auto it = this->requirements.begin();
-    int counter = 0;
-    for(auto it = begin(); it != end(); ++it)
-    {
-        if(counter == i)
-            return *it;
-
-        i++;
-    }
-//    if(i > 0){
-//        std::advance(it, i-1);
-//    }
-//    int numReq = this->getNumberOfRequirements();
-//    if(i >= numReq - 1){
-//        cout << "Advancing " << (numReq - 1) << endl;
-//        std::advance(it, numReq-1);
-//    }
-    return *it;
-}
-
 const ResearchPlan& ResearchPlan::operator=(const ResearchPlan& other){
     requirements = other.requirements;
     researchTopic = other.researchTopic;
@@ -137,9 +118,14 @@ bool operator==(const ResearchPlan one, const ResearchPlan two)
     if(one.getNumberOfRequirements() != two.getNumberOfRequirements())
         return false;
 
-	for(int i = 0; i < one.getNumberOfRequirements(); i++){
-        if(!(one.getRequirement(i) == two.getRequirement(i)))
-            return false;
+    auto it1 = one.begin();
+	auto it2 = two.begin();
+	for (; it1 != one.end(); it1++, it2++) {
+		Topic one = (*it1);
+		Topic two = (*it2);
+		bool match = (one == two);
+		//cout << "one: " << one << " two: " << two << " match: " << match << endl;
+        if(!match) return false;
 	}
 	return true;
 }

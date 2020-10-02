@@ -308,9 +308,12 @@ UnitTest(PlanAssign) {
 	ResearchPlan plan(fix.trade);
 	plan.addRequirement(fix.commerce);
 	plan.addRequirement(fix.sailing);
-
+    cout << "PLanAssign" << endl;
+	cout << "Plan: " << endl <<plan << endl;
 	ResearchPlan plan2;
+	cout << "Plan2: " << endl <<plan2 << endl;
 	ResearchPlan plan3(plan2 = plan);
+	cout << "Plan3: " << endl <<plan3 << endl;
 	assertThat(plan2, isEqualTo(plan));
 	assertThat(plan3, isEqualTo(plan));
 
