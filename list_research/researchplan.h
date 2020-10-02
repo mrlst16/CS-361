@@ -57,7 +57,7 @@ public:
         researchTopic(topic)
     {
         for(auto it = begin; it != end; ++it){
-            requirements.push_back(*it);
+            this->addRequirement(*it);
         }
     }
 

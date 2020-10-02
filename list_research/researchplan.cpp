@@ -12,17 +12,15 @@ using namespace std;
 
 template <typename T>
 void addSortUnique(list<T>& lst, T item) {
-
-    cout <<  "List Size: " << lst.size() << " Topic: " << item << endl;
 	if (lst.size() == 0) {
-		lst.insert(lst.begin(), item);
+		lst.push_front(item);
 		return;
 	}
 
 	auto start = lst.begin();
-	T* previousP = &(*start);
+	T* startP = &(*start);
 
-	if(item < (*previousP)){
+	if(item < (*startP)){
         lst.push_front(item);
         return;
     }
@@ -33,7 +31,7 @@ void addSortUnique(list<T>& lst, T item) {
 		T current = *it;
 		auto prevIterator = it;
 		--prevIterator;
-		T previous = count == 0 ? *previousP : *prevIterator;
+		T previous = count == 0 ? *startP : *prevIterator;
 
 		if(
             item == previous
@@ -48,7 +46,6 @@ void addSortUnique(list<T>& lst, T item) {
 			return;
 		}
 
-		previousP = &current;
 		count++;
 	}
 

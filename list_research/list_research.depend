@@ -59,7 +59,7 @@
 	<vector>
 	"researchplan.h"
 
-1601433929 c:\users\mattl\source\repos\cs-361\list_research\researchplan.h
+1601671712 c:\users\mattl\source\repos\cs-361\list_research\researchplan.h
 	<iostream>
 	<string>
 	<vector>
@@ -72,7 +72,7 @@
 	<string>
 	<exception>
 
-1601670709 source:c:\users\mattl\source\repos\cs-361\list_research\researchplan.cpp
+1601670979 source:c:\users\mattl\source\repos\cs-361\list_research\researchplan.cpp
 	"researchplan.h"
 	<cassert>
 	<iostream>
